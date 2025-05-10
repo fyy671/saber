@@ -1,0 +1,22 @@
+<video id="myVideo" width="800" controls>
+    <source src="https://fyy671.github.io/saber/saber.mp4" type="video/mp4">
+</video>
+
+<script>
+    const video = document.getElementById("myVideo");
+
+    // 播放
+    document.getElementById("playBtn").addEventListener("click", () => {
+        video.play();
+    });
+
+    // 暂停
+    document.getElementById("pauseBtn").addEventListener("click", () => {
+        video.pause();
+    });
+
+    // 跳转到10秒
+    document.getElementById("skipBtn").addEventListener("click", () => {
+        video.currentTime = 10;
+    });
+</script>
